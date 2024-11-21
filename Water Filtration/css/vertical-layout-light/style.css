@@ -20193,7 +20193,7 @@ code {
 
 .card-people {
   position: relative;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .card-people img {
@@ -28449,7 +28449,8 @@ div.tagsinput span.tag a {
 }
 
 .content-wrapper {
-  background: #F5F7FF;
+  /* background: #F5F7FF; */
+  background: white;
   padding: 2.375rem 2.375rem;
   width: 100%;
   -webkit-flex-grow: 1;
@@ -30689,4 +30690,27 @@ div.tagsinput span.tag a {
 .card.card-orange {
   background: #FE6612;
   color: #ffffff;
+}
+
+.card .card-OneTwo {
+    padding: 1.25rem 0.25rem;
+    margin-left: 10px;
+    height: 180px;
+}
+
+
+.large-bullets {
+  list-style-type: disc; /* Use bullet points */
+  padding-left: 20px; /* Add some left padding */
+}
+
+.large-bullets li {
+  font-size: 16px; /* Adjust text size */
+  line-height: 1.8; /* Space between items */
+  margin-left: 288px;
+}
+
+.large-bullets li::marker {
+  font-size: 24px; /* Make the bullet points larger */
+  color: #007bff; /* Optional: Change bullet color */
 }
