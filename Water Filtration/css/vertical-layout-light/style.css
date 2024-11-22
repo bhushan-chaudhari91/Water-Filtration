@@ -20232,7 +20232,8 @@ code {
 }
 
 .fs-30 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 17px;
 }
 
 .chartjs-legend ul {
@@ -28455,6 +28456,7 @@ div.tagsinput span.tag a {
   width: 100%;
   -webkit-flex-grow: 1;
   flex-grow: 1;
+  margin-top: -20px;
 }
 
 @media (max-width: 767px) {
@@ -30595,6 +30597,8 @@ div.tagsinput span.tag a {
 
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
 
+/* Start To Change CSS */
+
 /* Change Color for Layout Background #7da0fa */
 .navbar .navbar-brand-wrapper {
   background: #EEF5FF;}
@@ -30604,7 +30608,10 @@ div.tagsinput span.tag a {
 
 .sidebar {
   min-height: calc(100vh - 60px);
-  background: #EEF5FF;}
+  background: #EEF5FF;
+  margin-top: -20px;
+}
+  
 
 
   .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link, .sidebar .nav:not(.sub-menu) > .nav-item:hover[aria-expanded="true"] {
@@ -30695,7 +30702,7 @@ div.tagsinput span.tag a {
 .card .card-OneTwo {
     padding: 1.25rem 0.25rem;
     margin-left: 10px;
-    height: 180px;
+    height: 120px;
 }
 
 
