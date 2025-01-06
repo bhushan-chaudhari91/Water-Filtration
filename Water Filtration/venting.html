@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="vendors/feather/feather.css">
   <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
-  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
@@ -465,17 +465,17 @@
                           </div>
                           <div class="col-md-3 d-flex align-items-center">
                             <div class="d-flex flex-row align-items-center">
-                              <button type="button" class="btn btn-primary btn-rounded btn-fw" style="background-color: #8284ff;">Start&nbsp;&nbsp;</button>
+                              <button type="button" class="btn btn-primary btn-rounded btn-fw" style="background-color: #8284ff;">&nbsp;Start&nbsp;</button>
                             </div>
                           </div>
                           <div class="col-md-3 d-flex align-items-center">
                             <div class="d-flex flex-row align-items-center">
-                              <button type="button" class="btn btn-primary btn-rounded btn-fw" style="background-color: #8284ff;">Stop&nbsp;&nbsp;&nbsp;</button>
+                              <button type="button" class="btn btn-primary btn-rounded btn-fw" style="background-color: #8284ff;">&nbsp;Stop&nbsp;&nbsp;</button>
                             </div>
                           </div>
                           <div class="col-md-3 d-flex align-items-center">
                             <div class="d-flex flex-row align-items-center">
-                              <button type="button" class="btn btn-primary btn-rounded btn-fw" style="background-color: #8284ff;">Reset&nbsp;&nbsp;</button>
+                              <button type="button" class="btn btn-primary btn-rounded btn-fw" style="background-color: #8284ff;">&nbsp;Reset&nbsp;</button>
                             </div>
                           </div>
                         </div>
@@ -483,7 +483,7 @@
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <input type="datetime-local" class="form-control mb-2 mr-sm-2" style=" margin-top: -10%;" id="inlineFormInputName2" >
+                    <input type="datetime-local" class="form-control mb-2 mr-sm-2" style="margin-top: -20%; border-radius: 30px;" id="inlineFormInputName2" >
                   </div>
                 </div>
               </div>
@@ -781,14 +781,14 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="td1"></td>
-                                <td class="td1"></td>
-                                <td class="td1"></td>
+                                <td class="td1">19/11/2024</td>
+                                <td class="td1">01:24:12 PM</td>
+                                <td class="td1">Set Alaram Successfully</td>
                             </tr>
                             <tr>
-                              <td class="td1"></td>
-                              <td class="td1"></td>
-                              <td class="td1"></td>
+                              <td class="td1">20/11/2024</td>
+                              <td class="td1">12:02:56 PM</td>
+                              <td class="td1">Set Alaram Successfully</td>
                           </tr>
                           <tr>
                             <td class="td1"></td>
@@ -832,6 +832,20 @@
   <script src="js/dashboard.js"></script>
   <script src="js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+
+  <script>
+    // Get the input element
+    const dateTimeInput = document.getElementById("inlineFormInputName2");
+
+    // Get the current date and time
+    const now = new Date();
+
+    // Format the date and time as 'YYYY-MM-DDTHH:MM'
+    const formattedDateTime = now.toISOString().slice(0, 16);
+
+    // Set the value of the input to the current date and time
+    dateTimeInput.value = formattedDateTime;
+</script>
 </body>
 
 </html>
